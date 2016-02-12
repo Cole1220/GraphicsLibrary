@@ -1,0 +1,6 @@
+Use code to open an image and modify it in some manner before saving it (be sure to rename the output image).
+
+Task:
+	Create a 400 pixel tall by 768 pixel wide image that goes from black to red, red to blue, and blue to green. 
+	Create an image of your choosing, please make it interesting
+	Create a second image of your choosing, again make it interesting
