@@ -1,4 +1,4 @@
-Graphics Library for Independent study
+Graphics Library
 TODO: Update folder names to be descriptive, Get Planes working in HW7, Get triangles, lights, reflection code updated and in
 
 HW1: Experiementing with image creation
