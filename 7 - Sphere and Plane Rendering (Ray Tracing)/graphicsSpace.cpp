@@ -362,8 +362,7 @@ void Line::rayTrace(Ray *in, Intersect *output)
 		Pt->add(P1);
 		
 		Rs = new Vector(D);
-		Rs->multiply(t);
-		Rs->add(in->start);
+		Rs->multiply(s);
 		
 		if(Pt->length(Rs) <= THRESHOLD)
 		{
@@ -480,8 +479,8 @@ Plane::Plane()
 
 Plane::Plane(double x, double y, double z, double dX, double dY, double dZ, Pixel colorIn)
 {
-  normal = new Vector(x, y, z);
-  intersect = new Vector(dX, dY, dZ);
+  intersect = new Vector(x, y, z);
+  normal = new Vector(dX, dY, dZ);
   k = intersect->dotProduct(normal);
   
   color = colorIn;
@@ -602,7 +601,7 @@ void Ray::setColor(Pixel colorIn)
 
 void Ray::printRay()
 {
-	printf("Start: (X: %d, Y: %d, Z: %d), Direction: (X: %d, Y: %d, Z: %d)", start->x, start->y, start->z, direction->x, direction->y, direction->z);
+	printf("Start: (X: %f, Y: %f, Z: %f), Direction: (X: %f, Y: %f, Z: %f) \n", start->x, start->y, start->z, direction->x, direction->y, direction->z);
 }
 
 ///////////////////////////////////////////////////////////////////////
